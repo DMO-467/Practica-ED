@@ -67,6 +67,8 @@ public class Trabajador {
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
     }
+
+    // CalcularSalario nos da el salario exacto del trabajador teniendo en cuenta los factores individuales de cada tipo de trabajador
     public double calcularSalario(){
         return salarioBase;
     }
@@ -74,7 +76,7 @@ public class Trabajador {
     public String trabajar(){
         return "Estoy trabajando en el centro educativo";
     }
-
+    // Antiguedad calcula en años el tiempo que lleva en el trabajo
     public long antiguedad(){
         return ChronoUnit.YEARS.between(fechaDeIncorporacion, LocalDate.now());
     }

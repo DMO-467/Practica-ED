@@ -28,7 +28,7 @@ public class PersonalAdministrativo extends Trabajador{
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-
+    // CalcularSalario nos da el salario final del PersonalAdministrativo
     public double calcularSalario(){
         if (nivel == 1) {
             return super.getSalarioBase() + nivel1;

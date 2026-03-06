@@ -18,6 +18,7 @@ public class CentroEducativo {
     public void setCentro(ArrayList<Trabajador> centro) {
         this.centro = centro;
     }
+    // Trabajadores muestra todos los trabajadores del centro con sus peculiaridades
     public void trabajadores(){
         for (Trabajador t : centro) {
             if (t instanceof Profesor) {
@@ -29,7 +30,7 @@ public class CentroEducativo {
             }
         }
     }
-
+    // SalarioMedio calcula el sueldo medio entre todos los trabajadores
     public double salarioMedio(){
         double num = 0;
         int num2 = 0;
@@ -40,7 +41,7 @@ public class CentroEducativo {
         num = num / num2;
         return num;
     }
-
+    // MasViejo muestra al trabajador mas antiguo
     public long masViejo(){
         long num = 0;
         Trabajador viejo = new Trabajador();
@@ -54,7 +55,7 @@ public class CentroEducativo {
         System.out.println("Lleva los siguientes años en el centro: ");
         return num;
     }
-
+    // Econtrar nos permite metiendo el nombre o la profesion del trabajador poder encontrar los datos de dicho trabajador
     public void encontrar(String nt){
         for (Trabajador t : centro) {
             if (t.getNombre().equalsIgnoreCase(nt)) {
