@@ -32,6 +32,10 @@ public class Trabajador {
         return nombre;
     }
 
+    /**
+     *
+     * @parameters ninguno
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -60,10 +64,20 @@ public class Trabajador {
         this.fechaDeIncorporacion = fechaDeIncorporacion;
     }
 
+    /**
+     *
+     * @return double con el valor del salario
+     * @parameters ninguno
+     */
     public double getSalarioBase() {
         return salarioBase;
     }
 
+    /**
+     *
+     * @return double con el valor del salario
+     * @parameters ninguno
+     */
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
     }
@@ -91,6 +105,12 @@ public class Trabajador {
     public long antiguedad(){
         return ChronoUnit.YEARS.between(fechaDeIncorporacion, LocalDate.now());
     }
+
+    /**
+     *
+     * @return string
+     * @parameters ninguno
+     */
 
     @Override
     public String toString() {

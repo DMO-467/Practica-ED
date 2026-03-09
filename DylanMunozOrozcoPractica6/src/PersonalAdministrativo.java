@@ -1,11 +1,12 @@
 import java.time.LocalDate;
 
+/**
+ * Esta clase es una variante de trabajador
+ * @author Dylan Munoz Orozco
+ * @version 1.0
+ */
 public class PersonalAdministrativo extends Trabajador{
-    /**
-     * Esta clase es una variante de trabajador
-     * @author Dylan Munoz Orozco
-     * @version 1.0
-     */
+
 
     private String departamento;
     private int nivel;
