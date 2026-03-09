@@ -1,6 +1,10 @@
 import java.time.LocalDate;
 
 public class Profesor extends Trabajador{
+    /**
+     * Esta clase es una variante de trabajador
+     * @author Dylan Munoz Orozco
+     * @version 1.0*/
 
     private String especialidad;
     private int horasLectivasSemanales;
@@ -27,7 +31,11 @@ public class Profesor extends Trabajador{
     public void setHorasLectivasSemanales(int horasLectivasSemanales) {
         this.horasLectivasSemanales = horasLectivasSemanales;
     }
-
+    /**
+     * el metodo calcularSalario nos da el salario de un profesor teniendo en cuenta sus horas y el precio de la misma
+     * @return void
+     * @parameters ninguno
+     */
     public double calcularSalario(){
          return super.getSalarioBase() + (horasLectivasSemanales*precioHoras);
     }

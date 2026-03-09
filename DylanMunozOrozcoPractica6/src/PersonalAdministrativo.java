@@ -1,6 +1,12 @@
 import java.time.LocalDate;
 
 public class PersonalAdministrativo extends Trabajador{
+    /**
+     * Esta clase es una variante de trabajador
+     * @author Dylan Munoz Orozco
+     * @version 1.0
+     */
+
     private String departamento;
     private int nivel;
     private int nivel1 = 500;
@@ -28,7 +34,11 @@ public class PersonalAdministrativo extends Trabajador{
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-    // CalcularSalario nos da el salario final del PersonalAdministrativo
+    /**
+     *  CalcularSalario nos da el salario final del PersonalAdministrativo
+     * @return double con el salario sumandole la bonificacion por el nivel que es
+     * @parameters ninguno
+     */
     public double calcularSalario(){
         if (nivel == 1) {
             return super.getSalarioBase() + nivel1;

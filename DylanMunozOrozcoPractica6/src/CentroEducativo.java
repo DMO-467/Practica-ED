@@ -1,6 +1,12 @@
 import java.util.ArrayList;
 
 public class CentroEducativo {
+    /**
+     * Esta clase es un array de objetos Trabajador y de sus congeneres.
+     * @author Dylan Munoz Orozco
+     * @version 1.0
+     */
+
     private ArrayList<Trabajador> centro;
 
     public CentroEducativo(){
@@ -18,7 +24,11 @@ public class CentroEducativo {
     public void setCentro(ArrayList<Trabajador> centro) {
         this.centro = centro;
     }
-    // Trabajadores muestra todos los trabajadores del centro con sus peculiaridades
+    /**
+     * Trabajadores muestra todos los trabajadores del centro con sus peculiaridades
+     * @return void
+     * @parameters ninguno
+     */
     public void trabajadores(){
         for (Trabajador t : centro) {
             if (t instanceof Profesor) {
@@ -30,7 +40,11 @@ public class CentroEducativo {
             }
         }
     }
-    // SalarioMedio calcula el sueldo medio entre todos los trabajadores
+    /**
+     * SalarioMedio calcula el sueldo medio entre todos los trabajadores
+     * @return void
+     * @parameters ninguno
+     */
     public double salarioMedio(){
         double num = 0;
         int num2 = 0;
@@ -41,7 +55,11 @@ public class CentroEducativo {
         num = num / num2;
         return num;
     }
-    // MasViejo muestra al trabajador mas antiguo
+    /**
+     * MasViejo muestra al trabajador mas antiguo
+     * @return void
+     * @parameter ninguno
+     */
     public long masViejo(){
         long num = 0;
         Trabajador viejo = new Trabajador();
@@ -55,7 +73,11 @@ public class CentroEducativo {
         System.out.println("Lleva los siguientes años en el centro: ");
         return num;
     }
-    // Econtrar nos permite metiendo el nombre o la profesion del trabajador poder encontrar los datos de dicho trabajador
+    /**
+     * Econtrar nos permite metiendo el nombre o la profesion del trabajador poder encontrar los datos de dicho trabajador
+     * @return el objeto que coincide con el parametro indicado
+     * @parameter una String con el nombre de un trabajador o su profesion
+     */
     public void encontrar(String nt){
         for (Trabajador t : centro) {
             if (t.getNombre().equalsIgnoreCase(nt)) {
